@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Darshan Parmar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-brand">Darshan Parmar</div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <span class="theme-icon" id="themeIcon">🌙</span>
+          </button>
+          <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="profile-image-wrapper">
+            <img
+              src="Photo.jpg"
+              alt="Darshan Parmar"
+              class="profile-image"
+              id="profileImage"
+            />
+          </div>
+          <div class="hero-text">
+            <h1 class="hero-title">
+              Hi, I'm <span class="highlight">Darshan Parmar</span>
+            </h1>
+            <p class="hero-subtitle">Full Stack Developer & IT Graduate</p>
+            <p class="hero-description">
+              Passionate about building dynamic web applications and innovative
+              solutions
+            </p>
+            <div class="hero-buttons">
+              <button class="btn btn-primary" id="viewProjectsBtn">
+                View My Projects
+              </button>
+              <button class="btn btn-secondary" id="contactBtn">
+                Get In Touch
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a dedicated Full Stack Developer currently pursuing my MSc in
+              Information Technology at SVKM's Usha Pravin Gandhi College. With
+              a strong foundation in web development and a passion for creating
+              innovative solutions, I specialize in building dynamic web
+              applications using modern technologies.
+            </p>
+            <p>
+              I completed my BSc in Information Technology with a CGPA of 8.68
+              from KES' Shroff College, where I developed expertise in both
+              front-end and back-end development. My experience includes working
+              with PHP, Laravel, React.js, and various other technologies to
+              deliver high-quality applications.
+            </p>
+          </div>
+          <div class="education">
+            <h3>Education</h3>
+            <div class="education-item">
+              <h4>MSc in Information Technology</h4>
+              <p>SVKM's Usha Pravin Gandhi College | 2025 - 2027 | Pursuing</p>
+            </div>
+            <div class="education-item">
+              <h4>BSc in Information Technology</h4>
+              <p>KES' Shroff College | 2022 - 2025 | CGPA: 8.68</p>
+            </div>
+            <div class="education-item">
+              <h4>HSC (Commerce)</h4>
+              <p>KES' Shroff College | 2022 | 71.50%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">PHP</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Frameworks & Libraries</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Others</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Tableau</span>
+              <span class="skill-tag">Excel</span>
+              <span class="skill-tag">Data Visualization</span>
+              <span class="skill-tag">MS Office</span>
+              <span class="skill-tag">Canva</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=400&fit=crop"
+                alt="Portfolio Website"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-description">
+                Developed a responsive portfolio website featuring interactive
+                UI, smooth animations, and a structured layout to showcase
+                projects, skills, and experience.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <button
+                class="btn btn-project"
+                onclick="showProjectDetails('portfolio')"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop"
+                alt="E-commerce Website"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Myntra UI Clone</h3>
+              <p class="project-description">
+                Developed a MYNTRA UI clone from scratch using HTML, CSS, and
+                Bootstrap to enhance front-end development skills, focusing on
+                replicating the original design and layout.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <button
+                class="btn btn-project"
+                onclick="showProjectDetails('myntra')"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=400&fit=crop"
+                alt="IoT Smart Helmet"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Smart Helmet</h3>
+              <p class="project-description">
+                Developed an IoT-based smart helmet using ESP32 and multiple
+                sensors (gas, temperature, pulse, ultrasonic, IR) to monitor
+                miners' safety in real-time. Integrated with the BLYNK app for
+                live data tracking and alerts.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Arduino</span>
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">IoT</span>
+                <span class="tech-tag">Sensors</span>
+              </div>
+              <button
+                class="btn btn-project"
+                onclick="showProjectDetails('helmet')"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-timeline">
+          <div class="experience-item">
+            <div class="experience-date">Apr 2025 - Oct 2025</div>
+            <div class="experience-content">
+              <h3>Full Stack Developer Intern</h3>
+              <h4>Positive Quadrant Technologies</h4>
+              <p class="experience-location">Remote, Mumbai</p>
+              <ul class="experience-details">
+                <li>
+                  Contributed to dynamic web applications and interactive
+                  modules using PHP and Laravel
+                </li>
+                <li>
+                  Developed both front-end and back-end features, implemented
+                  bug fixes, and optimized performance
+                </li>
+                <li>
+                  Designed and managed databases, following modern development
+                  workflows
+                </li>
+                <li>Enhanced problem-solving and team collaboration skills</li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="experience-date">Feb 2024 - Mar 2024</div>
+            <div class="experience-content">
+              <h3>Python Developer Intern</h3>
+              <h4>CodSoft</h4>
+              <p class="experience-location">Remote, Mumbai</p>
+              <ul class="experience-details">
+                <li>
+                  Completed structured tasks to enhance skills and understanding
+                  of real-world applications
+                </li>
+                <li>
+                  Successfully delivered projects demonstrating commitment to
+                  learning and adaptability
+                </li>
+                <li>
+                  Maintained timely delivery of results with high quality
+                  standards
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <strong>Location:</strong> Dahisar, Mumbai-68
+            </div>
+            <div class="contact-item">
+              <strong>Phone:</strong> <a href="tel:9867008801">9867008801</a>
+            </div>
+            <div class="contact-item">
+              <strong>Email:</strong>
+              <a href="mailto:darshuparmar67@gmail.com"
+                >darshuparmar67@gmail.com</a
+              >
+            </div>
+            <div class="contact-item">
+              <strong>LinkedIn:</strong>
+              <a href="https://www.linkedin.com/in/darshanparmarr" target="_blank">Connect with me</a>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contactForm">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Darshan Parmar. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div class="modal" id="projectModal">
+      <div class="modal-content">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div id="modalTech"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
